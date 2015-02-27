@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/enterManually"
+        android:layout_below="@+id/toolbar">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/productIcon"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/noproducts"
+            android:background="@drawable/button_style_imagebutton"
+
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/enterManually"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:text="Enter BarCode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/bottomelayout"
+        android:textColor="#FFFFFF" />
+    <RelativeLayout
+        android:id="@+id/bottomelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E0E0E0">
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_style"
+            android:drawableLeft="@drawable/ic_dollar"
+            android:gravity="center"
+            android:text="Pay"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/totalRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="$300"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

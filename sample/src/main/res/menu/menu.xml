@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    >
+    <item
+        android:id="@+id/action_barcode"
+        android:icon="@drawable/ic_scaner"
+        android:title="barcode"
+        android:layout_gravity="center"
+        app:showAsAction="always"
+
+        />
+
+</menu>
+
